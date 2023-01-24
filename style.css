@@ -73,6 +73,7 @@ main{
 
 #plan{
     grid-area: plan;
+    font-weight: 900;
 }
 
 #price{

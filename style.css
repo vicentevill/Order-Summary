@@ -1,0 +1,124 @@
+/* font-family: 'Red Hat Display', sans-serif; */
+html *{
+    /* background-color: rgba(238, 130, 238, 0.2);
+    outline: 2px dotted black; */
+    margin: 0;
+    font-family:'Red Hat Display', sans-serif;
+}
+
+html{
+    font-size: 16px;
+    background-color: #eaedfc;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-width: 300px;
+    max-width: 400px;
+    gap: 30px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    color: #282e48;
+    margin: 0 20px 0 20px;
+}
+
+#summaryHero{
+    width: 100%;
+}
+
+#summaryHeader{
+    font-size: 22px;
+}
+
+#summaryText{
+    width: 80%;
+    color: #6d7383;
+}
+
+#planDetails{
+    display: grid;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    "logo plan change"
+    "logo price change"
+    ;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f8f9fe;
+    font-size: 14px;
+}
+
+#musicSVG{
+    grid-area: logo;
+    padding-right: 15px;
+}
+
+#plan{
+    grid-area: plan;
+}
+
+#price{
+    grid-area: price;
+    color: #6d7383;
+}
+
+#change{
+    grid-area: change;
+    padding-left: 50px;
+    color: #3e33ad;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#paymentButton{
+    color:white;
+    background: #382ae1;
+    width: 80%;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 15px 0 15px 0;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 15px #dedbf6;
+    cursor: pointer;
+}
+
+#cancelButton{
+    border: 0px;
+    background: transparent;
+    color:#6d7383;
+    font-weight: 900;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#change:hover{
+    color: #766cf1;
+}
+
+#paymentButton:hover{
+    background: #766cf1;
+}
+
+#cancelButton:hover{
+    color: #282e48;
+}
